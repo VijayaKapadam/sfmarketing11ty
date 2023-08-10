@@ -17,6 +17,20 @@ module.exports = (config) => {
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
 
+  config.addNunjucksAsyncShortcode("fetchApiData", async function() {
+    const response = await fetch('/api/fetchNotion'); // Adjust the URL accordingly
+    const data = await response.json();
+
+    // Process and manipulate data if needed
+    const processedData = data.response.results.map(item => {
+      // Manipulate item properties if needed
+      return item;
+    });
+
+    // Return processed data as JSON string
+    return JSON.stringify(processedData);
+  });
+
   return {
     dir: {
       input: 'src',

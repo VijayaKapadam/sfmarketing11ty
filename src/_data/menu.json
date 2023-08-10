@@ -8,8 +8,13 @@
         "url": "/tags"
     },
     {
+        "label": "Notion",
+        "url": "/notion"
+    },
+    {
         "label": "GitHub",
         "url": "https://github.com/VijayaKapadam",
         "newTab": true
     }
+
 ]

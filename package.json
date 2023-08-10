@@ -31,7 +31,12 @@
     "cross-env": "^7.0.3",
     "dayjs": "^1.11.7",
     "html-minifier": "^4.0.0",
+    "netlify-cli": "^15.10.0",
     "tailwindcss": "^3.2.4",
     "terser": "^5.16.1"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.10",
+    "python": "0.0.4"
   }
 }
