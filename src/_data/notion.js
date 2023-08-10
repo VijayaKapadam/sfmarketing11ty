@@ -35,7 +35,7 @@ exports.handler = async function (event, context) {
         sorts: [
           {
             property: 'Published Date',
-            direction: 'ascending',
+            direction: 'descending',
           },
         ]
     });
