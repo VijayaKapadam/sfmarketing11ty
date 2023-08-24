@@ -18,7 +18,8 @@ async function getBlocks(block_id) {
   return children;
 }
 
-async function importPages() {
+
+exports.handler = async function (event, context) {
   // Retrieve pages from the database.
   let { results: pages } = await notion.databases.query({
     database_id: NOTION_DB,
@@ -39,9 +40,5 @@ async function importPages() {
     statusCode: 200,
     body: JSON.stringify({ pages }),
   };
-}
-
-exports.handler = async function (event, context) {
-importPages();
 };
   
