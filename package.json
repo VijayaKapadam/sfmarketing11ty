@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.10",
+    "clipboard.js": "^1.0.1",
     "highlight.js": "^11.8.0",
     "python": "0.0.4"
   }

@@ -1,3 +1,5 @@
+
+const hljs = require('highlight.js');
 module.exports = (config) => {
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
@@ -41,4 +43,18 @@ module.exports = (config) => {
     dataTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk'
   };
+
+
+    // Define a custom filter for syntax highlighting
+    config.addFilter('highlight', function(content, language) {
+      if (!language) {
+        // If no language is provided, treat it as plain text
+        language = 'plaintext';
+      }
+  
+      // Highlight the content using the specified language
+      return hljs.highlight(content, { language }).value;
+    });
 };
+
+
