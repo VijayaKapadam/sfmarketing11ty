@@ -6,31 +6,33 @@ thumb: "traveling-kuy.jpg"
 tags: popular
 ---
 
+...or even combine all of that...
 
-<article class="blog-post">
-  <h1>{{ title }}</h1>
+```js
+class Person {
+  constructor(name, age) {
+    this.#name = name;
+    this.#age = age;
+  }
 
-  <p>Welcome to the sample blog post about syntax highlighting using highlight.js!</p>
+  get isAdult() { // [sh! focus:start]
+    return this.#age >= 21; // [sh! -- **]
+    return this.#age >= 18; // [sh! add]
+  }
 
-  <h2>Example Code Block</h2>
-  <pre>
-    <code class="language-javascript">
-function greet(name) {
-  return `Hello, ${name}!`;
+  birthday() {
+    this.#age++; // [sh! highlight]
+  } // [sh! focus:end]
+}
+```
+
+But it can't be all roses...
+
+```js
+const greet = (name = "World") => {
+  const uppercaseName = name.toLocalUppercase(); // [sh! ~~ **]
+  console.log(`Hello ${name}!`); // [sh! -- **]
+  console.log(`Hello ${uppercaseName}!`); // [sh! ++ **]
 }
 
-console.log(greet('John'));
-    </code>
-  </pre>
-
-  <h2>Another Example Code Block</h2>
-  <pre>
-    <code class="language-python">
-def calculate_square(x):
-    return x * x
-
-print(calculate_square(5))
-    </code>
-  </pre>
-</article>
-
+```

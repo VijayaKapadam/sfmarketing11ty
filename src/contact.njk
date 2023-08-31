@@ -1,0 +1,49 @@
+---
+layout: default
+tags: Contact
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contact Us @ CloudRush</title>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="max-w-2xl mx-auto p-6">
+
+        <h2 class="text-2xl font-semibold mb-2">Get in Touch</h2>
+        <p class="mb-4">Ready to elevate your marketing endeavors? Whether you're looking to harness the capabilities of Salesforce Marketing Cloud or seeking innovative marketing solutions, we're here to assist. Contact CloudRush today to embark on a transformative marketing journey.</p>
+        
+        <!-- Contact Us Form -->
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:border-blue-400" required />
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:border-blue-400" required />
+            </div>
+            <div class="mb-4">
+                <label for="mobile" class="block text-gray-700 text-sm font-bold mb-2">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:border-blue-400" required />
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:border-blue-400" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
+            </div>
+        </form>
+        
+        <!-- Existing content... -->
+    </div>
+    
+</body>
+</html>

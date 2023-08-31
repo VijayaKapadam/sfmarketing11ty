@@ -4,17 +4,20 @@
         "url": "/about"
     },
     {
-        "label": "Tag List",
-        "url": "/tags"
+        "label": "Blog",
+        "url": "/blog"
     },
     {
-        "label": "Notion",
+        "label": "Laboratory",
         "url": "/notion"
     },
     {
-        "label": "GitHub",
-        "url": "https://github.com/VijayaKapadam",
-        "newTab": true
+        "label": "Tags",
+        "url": "/tags"
+    },
+    {
+        "label": "Contact",
+        "url": "/contact"
     }
 
 ]

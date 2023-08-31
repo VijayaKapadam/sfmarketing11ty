@@ -1,5 +1,6 @@
 module.exports = {
   title: 'CloudRush',
+  logo: '',
   description: 'Salesforce Marketign Starter Project - peronal blog',
   keywords: ['eleventy', 'template', 'simple', 'clean','salesforce marketing cloud'],
   url: 'https://astounding-centaur-ea1240.netlify.app', // your site url without trailing slash

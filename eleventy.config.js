@@ -1,8 +1,7 @@
-
-const hljs = require('highlight.js');
 module.exports = (config) => {
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
+
 
   config.addWatchTarget("src/assets/js/");
 
@@ -18,6 +17,10 @@ module.exports = (config) => {
   config.addCollection('tagList', require('./lib/collections/tagList'));
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
+
+  const shikier = require('./lib/filters/shiki.js'); 
+  config.addPlugin(shikier); 
+
 
   config.addNunjucksAsyncShortcode("fetchApiData", async function() {
     const response = await fetch('/api/fetchNotion'); // Adjust the URL accordingly
@@ -45,16 +48,6 @@ module.exports = (config) => {
   };
 
 
-    // Define a custom filter for syntax highlighting
-    config.addFilter('highlight', function(content, language) {
-      if (!language) {
-        // If no language is provided, treat it as plain text
-        language = 'plaintext';
-      }
-  
-      // Highlight the content using the specified language
-      return hljs.highlight(content, { language }).value;
-    });
 };
 
 

@@ -16,3 +16,95 @@
     clip-path: inset(1px);
   }
 }
+
+.shiki {
+  border-radius: var(--xs);
+  overflow: auto;
+  font-size: 1rem;
+  line-height: 1.2;
+  position: relative;
+}
+.shiki code {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  padding: var(--s) 0;
+}
+.language-id {
+  text-transform: uppercase;
+  color: #ccc;
+  padding: var(--xs) var(--s);
+  background: #fff2;
+  font-size: 0.8rem;
+  font-family: "Mona Sans", system-ui, Helvetica, sans-serif;
+  position: sticky;
+  left: 0;
+}
+.line.sh--highlight,
+.line.sh--add.sh--highlight,
+.line.sh--remove.sh--highlight {
+  background: #ff02;
+  box-shadow: inset var(--s) 0 0 #ff0;
+}
+.sh--focus ~ .line:not(.sh--focus),
+.line:not(.sh--focus):has(~ .sh--focus) {
+  filter: blur(1.5px);
+}
+.shiki:hover .line {
+  filter: blur(0);
+}
+.line {
+  transition: filter 0.3s;
+  display: inline-block;
+  width: 100%;
+  padding: 0 var(--s);
+}
+.shiki {
+  counter-reset: step;
+}
+.shiki::-webkit-scrollbar {
+  height: calc(2 * var(--xs));
+}
+.shiki::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to right,
+    var(--theme-color-a),
+    var(--theme-color-b)
+  );
+  border-radius: 100vw;
+}
+.shiki::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.shiki .line::before {
+  content: counter(step);
+  counter-increment: step;
+  width: var(--l);
+  margin-right: var(--s);
+  padding-right: var(--s);
+  display: inline-block;
+  text-align: right;
+  color: rgba(115, 138, 148, 0.4);
+  border-right: var(--xxxs) solid #fff1;
+}
+.shiki .line.sh--add::before {
+  content: "+";
+  color: #487e02;
+}
+.shiki .line.sh--remove::before {
+  content: "-";
+  color: #f00;
+}
+.line.sh--add {
+  background: #487e0219;
+  box-shadow: inset var(--xxs) 0 0 #487e02;
+}
+.line.sh--remove {
+  background: #8004;
+  box-shadow: inset var(--xxs) 0 0 #800;
+}
+.line.sh--updated {
+  background: #00f2;
+  box-shadow: inset var(--xxs) 0 0 #00f8;
+}
