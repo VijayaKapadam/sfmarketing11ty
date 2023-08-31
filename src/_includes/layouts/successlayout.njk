@@ -55,19 +55,7 @@
         
         {% endif %}
     </main>
-<!-- Subscribe to Newsletter Section -->
-<section class="mt-20 px-10 py-8 " style="background-color: skyblue;">
-    <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-2xl font-semibold mb-4 text-slate-700">Subscribe to Our Newsletter</h2>
-        <p class="text-gray-600 mb-8">Stay updated with the latest technical articles and tips.</p>
-        <form name="subscribe" method="POST" action="/success" netlify-honeypot="bot-field" data-netlify="true">
-            <div class="flex items-center justify-center">
-                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-l focus:outline-none focus:border-blue-400" placeholder="Enter your email" required />
-                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline">Subscribe</button>
-            </div>
-        </form>
-    </div>
-</section>
+
 
     {% include "partials/footer.njk" %}
     <script src="{{ '/assets/js/bundle.js' | url }}"></script>

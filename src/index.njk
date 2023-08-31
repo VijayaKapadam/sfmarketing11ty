@@ -1,16 +1,104 @@
 ---
 layout: default
-pagination:
-    data: collections.pagedPosts
-    size: 1
-    alias: paged
-permalink: "{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}index.html"
+tags: about
+
 ---
 
-<div class="flex flex-wrap -mx-2">
-    {% include "partials/post-grid.njk" %}
-</div>
 
-{% if collections.posts.length > site.paginate %}
-{% include "partials/paginator.njk" %}
-{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <title>Welcome to CloudRush</title>
+</head>
+<body class="bg-gray-100 font-sans">
+
+ <!-- Hero Section -->
+ <header class="bg-blue-700 py-20 text-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold mb-4">Transforming Businesses Through Innovation</h1>
+          </div>
+    <div class="max-w-5xl mx-auto px-4">
+        <p class="text-lg">
+            Leverage the power of Salesforce's comprehensive suite of solutions, including Sales Cloud and Marketing Cloud, 
+            to craft extraordinary personalized cross-channel experiences that drive revenue and customer engagement. 
+            Our skilled team at CloudRush specializes in harnessing the full potential of these cutting-edge platforms 
+            to orchestrate seamless interactions across various touchpoints.  
+            Unlock the capabilities of Marketing Cloud to deliver targeted, data-driven campaigns, automate customer journeys, and optimize engagement. 
+            Our expertise extends beyond these core offerings as we help you integrate data, migrate seamlessly, and strategize for future growth. 
+            Experience the transformation as your business thrives in the dynamic digital landscape.</p>
+    </div>
+</header>
+
+<!-- Services Section -->
+<section class="py-16">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-semibold mb-4">Our Implementation Services Overview</h2>
+          </div>
+    <div class="max-w-5xl mx-auto px-4">
+
+        <ul class="list-disc pl-6">
+            <li>Salesforce platform audit and optimisation services</li>
+            <li>End-to-end services for configuration, customisation and implementation.</li>
+            <li>BAU support to maintain your salesforce technical stack</li>
+
+            <li>Salesforce Marketing Cloud End-to-End Implementation</li>
+            <li>Salesforce Data Cloud</li>
+            <li>Salesforce Marketing Analytics</li>
+            <li>CRM Analytics</li>
+            <li>Data Migration & Integration services from/with your internal systems</li>
+            <!-- Add more services as needed -->
+        </ul>
+    </div>
+</section>
+
+<!-- Value Proposition Section -->
+<section class="bg-gray-200 py-16">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Our Value Proposition</h2>
+      
+    </div>
+    <div class="max-w-5xl mx-auto px-4 ">
+
+        <p class="text-lg">At CloudRush, we pride ourselves on being industry experts, offering a comprehensive suite of services tailored for enterprises. Our core focus is to guide businesses through a journey of strategic transformation, data-driven insights, and flawless execution. By leveraging the power of advanced platforms such as Salesforce's Sales Cloud, Marketing Cloud, Einstein, and Tableau, we empower enterprises to craft unparalleled personalized cross-channel experiences that yield a substantial return on investment (ROI).</p>
+
+        <div class="mt-8">
+            <h3 class="text-lg font-semibold mb-2">Our Approach:</h3>
+            <ul class="list-disc pl-6">
+                <li>Strategic Leadership: We lead the charge in developing strategic roadmaps that align your business objectives with the capabilities of Salesforce's suite of solutions. Our expertise ensures that your technology investments drive tangible outcomes.</li>
+                <li>Data-Driven Business Intelligence: Our data experts dive deep into your business ecosystem to extract actionable insights. This enables us to design strategies that are rooted in data, ensuring optimal targeting and engagement across channels.</li>
+                <li>Flawless Execution: Our team combines technical prowess with creative finesse to flawlessly execute your strategies. From Sales Cloud to Marketing Cloud, we handle every facet of implementation with precision.</li>
+                <li>Personalized Cross-Channel Experiences: With our guidance, enterprises harness the power of cross-channel marketing to engage customers at every touchpoint. From personalized campaigns to automated customer journeys, we ensure every interaction resonates.</li>
+                <li>ROI-Driven Results: Our strategies aren't just about engagement – they're about measurable results. We focus on driving ROI through tailored campaigns, enhanced customer experiences, and efficient operations.</li>
+            </ul>
+        </div>
+
+        <div class="mt-8">
+            <h3 class="text-lg font-semibold mb-2">Our Comprehensive Services:</h3>
+            <ul class="list-disc pl-6">
+                <li>Salesforce Sales Cloud: Revolutionize your sales processes and customer relationship management for improved efficiency and growth.</li>
+                <li>Salesforce Marketing Cloud: Craft and execute data-driven marketing campaigns that captivate audiences and drive conversions.</li>
+                <li>CRM-Analytics Integration: Utilize advanced analytics and visualization to make informed business decisions and insights.</li>
+            </ul>
+        </div>
+        
+        <p class="text-lg mt-8">At CloudRush, we're not just service providers – we're strategic partners. We transform enterprises into agile, customer-centric organizations that thrive in today's competitive landscape. Together, we create experiences that leave a lasting impact and contribute to your business growth.</p>
+    </div>
+</section>
+
+
+<!-- Call to Action Section -->
+<section class="py-16">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Ready to Reach Your Revenue Goals?</h2>
+        <p class="text-lg mb-6">As your strategic advisor, we help enhance your people, processes, and technology to build a roadmap centered around scalable tactics and security.</p>
+        <a href="/contact" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Contact Us</a>
+    </div>
+</section>
+
+
+
+</body>
+</html>
