@@ -1,6 +1,6 @@
 ---
 title: "Accelerate Your Marketing Success with CloudRush"
-description: "In today's rapidly evolving digital landscape, successful marketing requires a deep understanding of your audience, data-driven insights, and the ability to deliver personalized experiences across multiple channels."
+description: "In today's rapidly evolving digital landscape, successful marketing requires a deep understanding"
 date: 2023-03-03T17:51
 thumb: "much-to-do.jpeg"
 tags: SalesforceMarketingCloud

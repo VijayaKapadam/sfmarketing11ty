@@ -7,10 +7,7 @@
         "label": "Blog",
         "url": "/blog"
     },
-    {
-        "label": "Laboratory",
-        "url": "/notion"
-    },
+
     {
         "label": "Tags",
         "url": "/tags"
