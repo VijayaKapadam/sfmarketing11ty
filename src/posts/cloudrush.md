@@ -1,7 +1,7 @@
 ---
 title: "Accelerate Your Marketing Success with CloudRush"
 description: "In today's rapidly evolving digital landscape, successful marketing requires a deep understanding"
-date: 2020-02-11T17:30
+date: 2023-02-11T17:30
 thumb: "https://i.imgur.com/AAVR2qH.jpg"
 tags: 
     - cloudrush
